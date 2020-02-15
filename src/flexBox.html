@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!-- <link rel="stylesheet" type="text/css" href="./flexBox.css"/> -->
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				
+			}
+			ul{
+				display: flex;
+				/* border: 1px solid red; */
+				height: 500px;
+				
+				/* background-color: #e8e8e9; */
+				align-items: center; 
+				 justify-content: center;/*左右居中*/ 
+				
+				
+			}
+			li{
+				
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>1</li>
+			<li>2</li>
+		</ul>
+		
+
+	<script type="text/javascript">
+		function foundStr(str){
+			str = [...str];
+			let num = str.length;
+			let obj = {};
+			for(let i = 0; i<num; i++){
+				let item = str.splice(0,1)[0];
+				if(str.indexOf()==-1 && obj[item]===undefined){
+					console.log(item)
+					
+				}else{
+					obj[item] = item
+					
+				}
+			}
+			// console.log(obj+0)
+		}
+		var str = ('ccbajhjfkjagf');
+		console.log(foundStr(str))
+	</script>
+	
+
+	
+	</body>
+</html>

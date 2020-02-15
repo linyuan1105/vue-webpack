@@ -1,0 +1,13 @@
+ul{
+	display: flex;
+	background: cyan;
+}
+li{
+	flex:  0 0 auto;
+	background: #006666;
+	margin: 10px;
+}
+li:nth-child(1){
+	/* margin:  auto; */
+	margin-right: auto;
+}
